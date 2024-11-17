@@ -1,0 +1,41 @@
+AgriRover/                      # Root folder
+│
+├── data/                       # Folder for storing datasets, models, and other resources
+│   ├── models/                 # Pre-trained models for fruit detection
+│   │   └── fruit_detection_model.h5
+│   ├── images/                 # Sample or captured images for testing
+│   └── logs/                   # Logs for model training or execution
+│
+├── scripts/                    # Core Python scripts for project functionality
+│   ├── detection/              # Scripts related to image detection
+│   │   ├── __init__.py         # Makes the directory a package
+│   │   ├── detect_fruits.py    # Main fruit detection script
+│   │   └── preprocess.py       # Image preprocessing utilities
+│   ├── arm_control/            # Scripts for robotic arm control
+│   │   ├── __init__.py         # Makes the directory a package
+│   │   ├── arm_movement.py     # Functions to control robotic arm
+│   │   └── serial_comm.py      # Functions for serial communication (e.g., Arduino)
+│   └── main.py                 # Main entry point for running the project
+│
+├── configs/                    # Configuration files
+│   ├── arm_config.yaml         # Configuration for robotic arm control
+│   ├── camera_config.yaml      # Camera settings
+│   └── project_settings.yaml   # General project settings
+│
+├── tests/                      # Test scripts for individual components
+│   ├── test_camera.py          # Test camera and image capture
+│   ├── test_detection.py       # Test fruit detection
+│   └── test_arm.py             # Test robotic arm movement
+│
+├── utils/                      # Utility scripts for shared functionality
+│   ├── __init__.py             # Makes the directory a package
+│   ├── logger.py               # Logging utilities
+│   ├── helpers.py              # General helper functions
+│   └── calibrations.py         # Calibration routines for camera and arm
+│
+├── .gitignore
+├── folder_structure.txt
+├── LICENCE
+├── README.md                   Documentationfor the project
+├── requirements.txt            # List of Python dependencies
+└── run.sh                      # Shell script for running the project
